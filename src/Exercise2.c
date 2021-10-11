@@ -19,24 +19,21 @@ int main(int argc, char *argv[]) {
 	int n = atoi(argv[1]);
 	int result;
 	//Your codes here
-	int a,i,fact=1;
-	printf("input a number:");
-	scanf("%d",&a);
+	int a,i result=1;
 		if (a%2==0)
 		{
 		for (i=2;i<=a;i=i+2)
 		{
-				fact=fact*i;
+				result=result*i;
 		}
 		}
 		else 
 		{
 			for (i=1;i<=a;i+=2){
-				fact=fact*i;
+				result=result*i;
 			}
 		}
 	
-	printf("Factorial: %d",fact);
 	printf("%d", result);
 	return 0;
 }

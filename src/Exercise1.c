@@ -19,18 +19,15 @@ int main(int argc, char *argv[]) {
 	float distance = atof(argv[1]);
 	int result;
 	//Your codes here
-	float km;
-	int money;
-	printf("input distance: ");
-	scanf("%f",&distance);
+	
 	if (distance <=2){
-	result= 7500*km;
+	result= 7500*distance;
 	}
 	
 	if(distance>2 && distance <=30 ){
 		result=((distance-2)/0.25*2000)+15000;
 		}
-	if(km>30){
+	if(distance>30){
 		result=15000+28*8000+ (distance-30)*5000;
 	}
 	
