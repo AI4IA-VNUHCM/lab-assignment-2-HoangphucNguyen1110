@@ -9,6 +9,15 @@ ______________________________________
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+
+int main(int argc, char *argv[]) {
+	//testing variable, applying it to your algorithm for auto-evaluating
+	int testcase = atoi(argv[1]);
+	//Your codes here
+	int n=testcase;
+	int i=2;
+	printf("Input a number: ");
+	scanf("%d",&n);
 int product_prime(int n)
 {
 	int i=2;
@@ -30,14 +39,6 @@ int product_prime(int n)
 		}	 
 	}
 }
-int main(int argc, char *argv[]) {
-	//testing variable, applying it to your algorithm for auto-evaluating
-	int testcase = atoi(argv[1]);
-	//Your codes here
-	int n=testcase;
-	int i=2;
-	printf("Input a number: ");
-	scanf("%d",&n);
 	product_prime(n);
 	
 	return 0;
