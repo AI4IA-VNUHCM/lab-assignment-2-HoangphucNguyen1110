@@ -22,16 +22,16 @@ int main(int argc, char *argv[]) {
 	float km;
 	int money;
 	printf("input distance: ");
-	scanf("%f",&km);
-	if (km <=2){
+	scanf("%f",&distance);
+	if (distance <=2){
 	result= 7500*km;
 	}
 	
-	if(km>2 ){
-		result=((km-2)/0.25*2000)+15000;
+	if(distance>2 && distance <=30 ){
+		result=((distance-2)/0.25*2000)+15000;
 		}
 	if(km>30){
-		result=15000+28*8000+ (km-30)*5000;
+		result=15000+28*8000+ (distance-30)*5000;
 	}
 	
 	printf("%d", result);
