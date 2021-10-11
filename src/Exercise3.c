@@ -13,9 +13,33 @@ ______________________________________
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int testcase = atoi(argv[1]);
-	
 	//Your codes here
-	
+	int n=testcase;
+	int i=2;
+	printf("Input a number: ");
+	scanf("%d",&n);
+int product_prime(int n)
+{
+	int i=2;
+	while (n!=1)
+	{
+		if(n%i==0)
+		{
+			printf("%d",i);
+			n/=i;
+			if(n!=1)
+			{
+				printf("*");
+			}
+		}
+		
+		else
+		{
+			i++;
+		}	 
+	}
+}
+	product_prime(n);
 	
 	return 0;
 }
