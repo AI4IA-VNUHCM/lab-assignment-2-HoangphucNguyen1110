@@ -24,16 +24,16 @@ int main(int argc, char *argv[]) {
 	printf("input distance: ");
 	scanf("%f",&km);
 	if (km <=2){
-	money= 7500*km;
+	result= 7500*km;
 	}
 	
-	if(km>2 && km <=30){
-		money=((km-2)/0.25*2000)+15000;
+	if(km>2 ){
+		result=((km-2)/0.25*2000)+15000;
 		}
 	if(km>30){
-		money=15000+28*8000+ (km-30)*5000;
+		result=15000+28*8000+ (km-30)*5000;
 	}
-		printf("Money: %d",money);
+	
 	printf("%d", result);
 	return 0;
 }
